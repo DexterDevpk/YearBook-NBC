@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Year Book of NBC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <img src="./logo.png" alt="NBC Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="yearbook.html">Year Book</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="slider">
+            <div class="slides">
+                <!-- Slides will be dynamically loaded -->
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>LET'S RELIVE THE MEMORIES WE MADE TOGETHER</h1>
+            <a href="yearbook.html"><button id="yearbook">Year Book</button></a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <!-- Images -->
+            <div class="gallery-item">
+                <img src="./gallery/gallery 2.png" alt="Gallery Image 1" onclick="openPopup(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/gallery 3.jpeg" alt="Gallery Image 2" onclick="openPopup(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/gallery 4.jpeg" alt="Gallery Image 3" style="height: 50%" onclick="openPopup(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/gallery 7.png" alt="Gallery Image 4" onclick="openPopup(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/gallery 6.jpeg" alt="Gallery Image 5" onclick="openPopup(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/gallery 5.jpeg" alt="Gallery Image 6" onclick="openPopup(this.src)">
+            </div>
+        </div>
+        <!-- Popup Section -->
+        <div id="imagePopup" class="popup" onclick="closePopup()">
+            <span class="close-btn">&times;</span>
+            <img id="popupImage" src="" alt="Popup Image">
+        </div>
+        <a href="gallery.html" class="view-all-btn">View All</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>Year Book of NBC</p>
+            <p>Designed & Developed for the students of Nust Balochistan Campus</p>
+            <p>Copyright reserved © 2024</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/NBCQtaofficial">
+                    <img src="./logos/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/nbc-quetta/">
+                    <img src="./logos/linkedin-logo.webp" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
